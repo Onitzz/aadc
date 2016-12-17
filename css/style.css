@@ -1,242 +1,77 @@
 @font-face {
-    font-family: 'eurofurence_lightregular';
-    src: url('eurof35-webfont.eot');
-    src: url('eurof35-webfont.eot?#iefix') format('embedded-opentype'),
-         url('eurof35-webfont.woff2') format('woff2'),
-         url('eurof35-webfont.woff') format('woff'),
-         url('eurof35-webfont.ttf') format('truetype'),
-         url('eurof35-webfont.svg#eurofurence_lightregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-body{
-    margin:0;
-    font:25px eurofurence_lightregular;
-}
-a{
-    text-decoration: none; 
-}
-#log{
-    margin-top: 5px;
-    margin-right: 10px;
-    color:#aaa;
-    position:absolute;
-    right:0;
-    top:4px;
-}
-#co{
-    margin-top: 10px;
-}
-#deco a{
-    margin-left: 10px;
-    color:#aaa;
-}
-#deco{
-    margin-top: 10px;
-}
-header img{
-    display: block;
-    margin-top:10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;  
-    max-width: 100%;
-    height: auto;
-}
-nav {
-    padding: 0; margin: 0;
-    text-align: center; /* centrer le texte */
-}
-nav ul{
-    margin-bottom: 2px;
-    padding:0;
-}
-nav li{
-    padding: 5px;
-    margin-right: 10px; 
-    display: inline;
-    list-style: none;
-    border: 2px solid #bbb;
-    border-bottom: 0px solid #fff;
-    border-radius: 40px 40px 0px 0px;
-}
-nav li:hover{
-    border: 2px dashed rgba(212,115,212,1);
-    border-bottom: 0px dashed #fff;
-    background-color:#ddd;
-}
-nav a{
-    display:inline-block;
-    margin: 0 30px;
-    color: Black;
-    font:30px eurofurence_lightregular;
-}
-hr {
-    margin-top: 0;
-    color:#ccc;
-    border: 1px solid #bbb;
-}
-section{
-    font:25px eurofurence_lightregular;
-    margin-left:auto;
-    margin-right:auto;
-    width:50%;
-}
-h1{
-    font-family: eurofurence_lightregular;
-    margin-left: 50px;
-    text-align: center
-}
-#choixcour{
-    width:100%;
-    border-spacing:20px 0 ;
-    height:350px;
-}
-.col1{
-    background-color: rgba(212,115,212,1);
-    width:25%;
-}
-.col2{
-    background-color: rgba(212,115,212,0.8);
-    width:25%;
-}
-.col3{
-    background-color: rgba(212,115,212,0.6);
-    width:25%;
-}
-.col4{
-    background-color: rgba(212,115,212,0.4);
-    width:25%;
-}
-th{
-    height:50px;
-    -webkit-border-top-left-radius: 10px;
-    -webkit-border-top-right-radius: 10px;
-    -moz-border-radius-topleft: 10px;
-    -moz-border-radius-topright: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.middle{
-   vertical-align: top; 
-    padding: 20px;
-}
-.bottom{
-    vertical-align: bottom;
-    -webkit-border-bottom-right-radius: 10px;
-    -webkit-border-bottom-left-radius: 10px;
-    -moz-border-radius-bottomright: 10px;
-    -moz-border-radius-bottomleft: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-footer{
-    height:200px;
-}
-#hrfoot{
-    margin-top: 10px;
-}
-#formcontact{
-    float: left;
-    margin-left: 150px;
-    clear:both;
+    font-family: "RobinSchooler";  
+    src: url('../font/RobinSchooler.ttf');
 }
 
-#formcontact label{
-    display: block;
-    width: 150px;
-    float: left;
-}
-#formcontact input{
-     margin-bottom: 10px;   
+body,html{
+	height:100%;
+	background:url(../image/greyfloral.png) repeat;
 }
 
-#forminscri label{
-    display: block;
-    width: 300px;
-    float: left;
+.nav,.navbar{
+	height:50px;
+	border:none;
+	border-radius:0;
+	background-color:rgba(0,0,0,0);
 }
-#forminscri input{
-     margin-bottom: 10px;   
-}
-#contact{
-    float:right;
-    margin-top: 0;
-    margin-right: 150px;
-    
-}
-#contact p,#contact br{
-    margin:0;
-}
-#carte{
-    width:100%;
-}
-.boutonlien{
-    height:35px;
-    width:100%;
-    margin:0 auto;
-    color:#343434;
--moz-box-shadow: 0px 0px 10px #343434;
--webkit-box-shadow: 0px 0px 10px #343434;
--o-box-shadow: 0px 0px 10px #343434;
-box-shadow: 0px 0px 10px #343434;
--moz-border-radius: 10px;
--webkit-border-radius: 10px;
-border-radius: 0 0 10px 10px ;
-border: 1px solid #656565;
-background:#cfcfcf;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cfcfcf", endColorstr="#656565"); /* Pour IE seulement et mode gradient à linear */}
-.tablecour{
-    width:100%;
-    height:60px;
-    border:2px solid #ccc;
-    border-radius: 10px;
-    margin-top: 5px;
-    padding-left:10px;
-}
-.tablecour:hover{
-    border-color:#aaa;
-}
-.tablecour:active{
-    border-color:rgba(212,115,212,1);
-}
-.tablecour td{
-    width:50%;
-}
-.tablegestion{
-    width:100%;
-    height:60px;
-    border:2px solid #ccc;
-    border-radius: 10px;
-    margin-top: 5px;
-    padding-left:10px;
-}
-.tablegestion:active{
-    border-color:rgba(212,115,212,1);
-}
-.tablegestion:hover{
-    border-color:#aaa;
-}
-.tablegestion td{
-    width:33%;
-}
-.soustablegestion{
-    width:100%;
-    height:40px;
-    border:2px solid #ddd;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-left: 30px;
-    padding-left:10px;
-}
-.soustablegestion:hover{
-    border-color:#bbb;
-}
-.soustablegestion td{
-    width:33%;
-}
-#supcour{
-    color:red;
-   float: right;
 
+.nav a {
+	color:#bbb;
+	font-size:18px;
+}
+
+.menu{
+	transition: 0.1s;
+}
+
+#menured{
+	color:#777;	
+}
+
+#menured:hover{
+	color:#bf1f27;
+	text-decoration:none;
+}
+
+#menublue{
+	color:#333;
+}
+
+#menublue:hover{
+	color:#13358d;
+	text-decoration:none;
+}
+
+#menuyellow{
+	color:#333;
+}
+
+#menuyellow:hover{
+	color:#fc951c;
+	text-decoration:none;
+}
+
+#accueil{
+	width:100%;
+	background: #fff url(../image/imagefond2.jpg) fixed;
+	background-size: 100%;
+	height:100%;
+}
+
+#accueil img{
+	width:100%;
+}
+
+#cover{
+	background-color:rgba(0,0,0,0.5);
+	height:100%;
+}
+
+#cover h1{
+	margin:0;
+	padding-top:5%;
+	color:white;
+	font-size:2000%;
+	font-family:'RobinSchooler',arial, sans-serif;
+	font-weight:imperial;
 }

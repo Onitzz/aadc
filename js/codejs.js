@@ -1,16 +1,10 @@
-$(document).ready(function(){
-$('.classacacher').hide();
-$.datetimepicker.setLocale('fr');
 
-$('#datetimepicker1').datetimepicker();
+$(document).ready(function() {
 
-    $(".liencache").click(function(){
-       var id = $(this).attr("id");
-       if ($("#divacacher"+id).is(":visible")){
-            $("#divacacher"+id).hide();
-        }
-        else{
-            $("#divacacher"+id).show();
-        }
-    });
+	$('.Collage').collagePlus({
+		'allowPartialLastRow' : true
+	});
+
 });
+
+

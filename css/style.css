@@ -1,77 +1,94 @@
-@font-face {
-    font-family: "RobinSchooler";  
-    src: url('../font/RobinSchooler.ttf');
-}
-
 body,html{
 	height:100%;
-	background:url(../image/greyfloral.png) repeat;
+	font-family: 'Caudex', serif;
+	background:#c9e0ff url(../image/special-delivery.jpg) repeat;
 }
 
-.nav,.navbar{
-	height:50px;
-	border:none;
-	border-radius:0;
-	background-color:rgba(0,0,0,0);
+.nav,.navbar {
+	height: 50px;
+	border: none;
+	border-radius: 0;
+	background-color: rgba(0,0,0,0);
 }
 
-.nav a {
-	color:#bbb;
-	font-size:18px;
-}
-
-.menu{
+.menu {
 	transition: 0.1s;
 }
 
-#menured{
-	color:#777;	
+
+.nav a {
+	color: #777;
+	font-size: 20px;
+	font-weight: normal;
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-weight: bold;
+
 }
 
-#menured:hover{
-	color:#bf1f27;
+.nav > li > a:hover,.nav > li > a:focus {
+	font-weight: bold;
 	text-decoration:none;
+	color:#ff0040;
+	background-color: rgba(0,0,0,0);
 }
 
-#menublue{
-	color:#333;
-}
-
-#menublue:hover{
-	color:#13358d;
-	text-decoration:none;
-}
-
-#menuyellow{
-	color:#333;
-}
-
-#menuyellow:hover{
-	color:#fc951c;
-	text-decoration:none;
-}
-
-#accueil{
+#accueil {
 	width:100%;
-	background: #fff url(../image/imagefond2.jpg) fixed;
+	background: rgb(76,146,163) url(../image/ciseau.jpg) no-repeat fixed;
 	background-size: 100%;
+	max-height:100%;
+	min-height:50vw;
+	height:65vw;
+}
+
+#cover {
+	background-color:rgba(255,255,255,0.7);
 	height:100%;
+	padding-top: 5%;
+	padding-bottom: 10%;
 }
 
-#accueil img{
-	width:100%;
-}
-
-#cover{
-	background-color:rgba(0,0,0,0.5);
-	height:100%;
-}
-
-#cover h1{
+#cover h1 {
 	margin:0;
-	padding-top:5%;
-	color:white;
-	font-size:2000%;
-	font-family:'RobinSchooler',arial, sans-serif;
-	font-weight:imperial;
+	color:#222;
+	font-size:30vw;
+	font-family: 'Dancing Script', cursive;
+	background:url(../image/yarn.jpg) center;
+	background-size: 100%;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#cover h2 {
+	margin:0;
+	color:#000;
+	font-size:4vw;
+	font-family: 'Dancing Script', cursive;
+}
+
+section {
+	margin-bottom: 50px;
+	background-color: white;
+}
+
+h1 {
+	margin-bottom:0;
+	padding: 10px 10px;
+	background-color: white;
+	margin-top: 20px;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+section p {
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size: small;
+    background-color: #FFFFFF;
+    color: #222;
+    display: block;
+    height:100%;
+  	width:100%;
 }

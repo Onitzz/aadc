@@ -1,7 +1,7 @@
 body,html{
 	height:100%;
 	font-family: 'Caudex', serif;
-	background:#c9e0ff url(../image/special-delivery.jpg) repeat;
+	background:#ccc url(../image/pattern2.png) repeat;
 }
 
 .nav,.navbar {
@@ -42,40 +42,37 @@ body,html{
 }
 
 #cover {
-	background-color:rgba(255,255,255,0.7);
+	background-color:rgba(255,255,255,0.4);
 	height:100%;
-	padding-top: 5%;
+	padding-top: 10%;
 	padding-bottom: 10%;
 }
 
-#cover h1 {
-	margin:0;
-	color:#222;
-	font-size:30vw;
-	font-family: 'Dancing Script', cursive;
-	background:url(../image/yarn.jpg) center;
-	background-size: 100%;
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+#cover img {
+	width:50%;
 }
 
 #cover h2 {
 	margin:0;
-	color:#000;
+	color:#222;
 	font-size:4vw;
 	font-family: 'Dancing Script', cursive;
 }
 
 section {
-	margin-bottom: 50px;
+	margin-top: 25px ;
+	margin-bottom: 25px;
 	background-color: white;
+	border:1px solid #ff0040;
 }
 
-h1 {
-	margin-bottom:0;
-	padding: 10px 10px;
+section img.circle {
+	border-radius: 140px;
+}
+
+section h1 {
+	padding: 5px 0px 40px 30px;
 	background-color: white;
-	margin-top: 20px;
 }
 
 .vertical-center {

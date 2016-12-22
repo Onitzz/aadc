@@ -1,7 +1,7 @@
 body, html {
   height: 100%;
   font-family: 'Caudex', serif;
-  background: #ccc url(../image/pattern2.png) repeat; }
+  background: #fff url(../image/grey_wash_wall.png) repeat; }
 
 .nav, .navbar {
   height: 50px;
@@ -33,12 +33,15 @@ body, html {
   height: 65vw; }
 
 #cover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0);
   height: 100%;
   padding-top: 10%;
   padding-bottom: 10%; }
-  #cover img {
-    width: 50%; }
+  #cover h1 {
+    font-size: 22vw;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: white; }
   #cover h2 {
     margin: 0;
     color: #222;
@@ -49,23 +52,37 @@ section {
   margin-top: 25px;
   margin-bottom: 25px;
   background-color: white;
-  border: 1px solid #ff0040; }
-  section img.circle {
-    border-radius: 140px; }
+  border: 1px solid #eea8ba;
+  padding-bottom: 70px; }
   section h1 {
     padding: 5px 0px 40px 30px;
-    background-color: white; }
+    background-color: white;
+    font-size: 4rem; }
   section p {
     font-family: verdana,arial,helvetica,sans-serif;
     font-size: small;
     background-color: #FFFFFF;
-    color: #222;
-    display: block;
-    height: 100%;
-    width: 100%; }
+    color: #222; }
 
-.vertical-center {
-  display: flex;
-  align-items: center; }
+#about h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.3rem;
+  font-weight: bolder;
+  color: #ff0040; }
+#about img.circle {
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  width: 100%;
+  max-width: 200px; }
+#about p {
+  font-size: 1.3rem;
+  color: #777; }
+#about span {
+  font-family: verdana,arial,helvetica,sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(200, 46, 84, 0.71); }
+#about div {
+  margin-bottom: 60px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+{
+  "name": "Onitzz/aadc",
+  "homepage": "https://github.com/Onitzz/aadc",
+  "authors": [
+    "Onitzz <benjamin.soufflet.info@gmail.com>"
+  ],
+  "description": "Projet site www.aadc-courdecouture.fr",
+  "main": "",
+  "license": "UNLICENSED",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

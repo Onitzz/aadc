@@ -20,13 +20,11 @@ body, html {
 		color: #777;
 		font-size: 20px;
 		font-weight: normal;
-		font-family: verdana,arial,helvetica,sans-serif;
-		font-weight: bold;
+		font-family: 'Oswald', sans-serif;
 	}
 
 	> li > a {
 		&:hover, &:focus {
-			font-weight: bold;
 			text-decoration: none;
 			color: #ff0040;
 			background-color: rgba(0, 0, 0, 0);
@@ -36,17 +34,22 @@ body, html {
 
 #accueil {
 	width: 100%;
-	background: rgb(76, 146, 163) url(../image/ciseau.jpg) no-repeat fixed;
-	background-size: 100%;
 	max-height: 100%;
 	min-height: 50vw;
 	height: 65vw;
 }
+.section {
+	background: url(../image/ciseau.jpg) no-repeat #000;
+	background-size:100%; }
+	
+	.section .inner {
+		background: url(../image/ciseau.jpg) no-repeat;
+		background-size:100%; }
 
 #cover {
 	background-color: rgba(255, 255, 255, 0);
 	height: 100%;
-	padding-top: 10%;
+	padding-top: 5%;
 	padding-bottom: 10%;
 
 	h1{
@@ -58,36 +61,41 @@ body, html {
 
 	h2 {
 		margin: 0;
-		color: #222;
+		color: #ff0040;
+		font-weight:bold;
 		font-size: 4vw;
 		font-family: 'Dancing Script', cursive;
 	}
 }
 
 section {
-	margin-top: 25px;
-	margin-bottom: 25px;
-	background-color: white;
-	border: 1px solid #eea8ba;
-	padding-bottom: 70px;
-
-
-
 	h1 {
-		padding: 5px 0px 40px 30px;
-		background-color: white;
 		font-size: 4rem;
+		color:#fff;
 	}
 
 	p {
 		font-family: verdana,arial,helvetica,sans-serif;
 		font-size: small;
-		background-color: #FFFFFF;
 		color: #222;
 	}
 }
 
-#about{
+.troisieme-quard {
+	background-color:rgba(0,0,0,0.5);
+	h1 {
+		font-family: 'Oswald', sans-serif;
+		margin-top:50px;
+		margin-bottom:50px;
+		font-size: 4rem;
+		color:#fff;
+	}
+}
+
+.second-quard{
+	background-color: #333;
+	padding-bottom: 70px;
+
 	h2{
 		font-family: 'Dancing Script', cursive;
 		font-size: 3.3rem;
@@ -103,12 +111,13 @@ section {
 	}
 
 	p {
+		font-family: 'Oswald', sans-serif;
 		font-size: 1.3rem;
 		color: #777;
 	}
 
 	span{
-		font-family: verdana,arial,helvetica,sans-serif;
+		font-family: 'Oswald', sans-serif;
 		font-size: 1.5rem;
 		font-weight: 600;
 		color: rgba(#c82e54, 0.71);
@@ -117,4 +126,9 @@ section {
 	div{
 		margin-bottom: 60px;
 	}
+}
+
+#about {
+	background:url(../image/atelier.jpg) fixed;
+	background-size:100%;
 }

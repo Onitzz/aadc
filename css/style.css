@@ -16,26 +16,30 @@ body, html {
   color: #777;
   font-size: 20px;
   font-weight: normal;
-  font-family: verdana,arial,helvetica,sans-serif;
-  font-weight: bold; }
+  font-family: 'Oswald', sans-serif; }
 .nav > li > a:hover, .nav > li > a:focus {
-  font-weight: bold;
   text-decoration: none;
   color: #ff0040;
   background-color: transparent; }
 
 #accueil {
   width: 100%;
-  background: #4c92a3 url(../image/ciseau.jpg) no-repeat fixed;
-  background-size: 100%;
   max-height: 100%;
   min-height: 50vw;
   height: 65vw; }
 
+.section {
+  background: url(../image/ciseau.jpg) no-repeat #000;
+  background-size: 100%; }
+
+.section .inner {
+  background: url(../image/ciseau.jpg) no-repeat;
+  background-size: 100%; }
+
 #cover {
   background-color: rgba(255, 255, 255, 0);
   height: 100%;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 10%; }
   #cover h1 {
     font-size: 22vw;
@@ -44,45 +48,55 @@ body, html {
     color: white; }
   #cover h2 {
     margin: 0;
-    color: #222;
+    color: #ff0040;
+    font-weight: bold;
     font-size: 4vw;
     font-family: 'Dancing Script', cursive; }
 
-section {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  background-color: white;
-  border: 1px solid #eea8ba;
-  padding-bottom: 70px; }
-  section h1 {
-    padding: 5px 0px 40px 30px;
-    background-color: white;
-    font-size: 4rem; }
-  section p {
-    font-family: verdana,arial,helvetica,sans-serif;
-    font-size: small;
-    background-color: #FFFFFF;
-    color: #222; }
-
-#about h2 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 3.3rem;
-  font-weight: bolder;
-  color: #ff0040; }
-#about img.circle {
-  border: 2px solid #aaa;
-  border-radius: 50%;
-  width: 100%;
-  max-width: 200px; }
-#about p {
-  font-size: 1.3rem;
-  color: #777; }
-#about span {
+section h1 {
+  font-size: 4rem;
+  color: #fff; }
+section p {
   font-family: verdana,arial,helvetica,sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: rgba(200, 46, 84, 0.71); }
-#about div {
-  margin-bottom: 60px; }
+  font-size: small;
+  color: #222; }
+
+.troisieme-quard {
+  background-color: rgba(0, 0, 0, 0.5); }
+  .troisieme-quard h1 {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 4rem;
+    color: #fff; }
+
+.second-quard {
+  background-color: #333;
+  padding-bottom: 70px; }
+  .second-quard h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.3rem;
+    font-weight: bolder;
+    color: #ff0040; }
+  .second-quard img.circle {
+    border: 2px solid #aaa;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 200px; }
+  .second-quard p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    color: #777; }
+  .second-quard span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(200, 46, 84, 0.71); }
+  .second-quard div {
+    margin-bottom: 60px; }
+
+#about {
+  background: url(../image/atelier.jpg) fixed;
+  background-size: 100%; }
 
 /*# sourceMappingURL=style.css.map */

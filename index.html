@@ -1,74 +1,88 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset="utf-8"/>
-		<title>Cours de couture</title>
-		<link href="https://fonts.googleapis.com/css?family=Caudex|Dancing+Script|Pacifico" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
-	<body>
-		<nav class="nav navbar-nav navbar-fixed-top">
-			<div class="container-fluid">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a id="menured" class="menu" href="index.php?page=accueil">A propos</a></li>
-					<li><a id="menublue" class="menu" href="index.php?page=cours">Cours</a></li>
-					<li><a id="menuyellow" class="menu" href="index.php?page=contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-		<div id="accueil">
-			<div id="cover">
-				<img src="image/yarn.png" alt="Titre a l'atelier de couture" class="center-block">
-				<h2 class="text-center">Cours de couture</h2>
-			</div>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Cours de couture</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Caudex|Dancing+Script|Pacifico" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<nav class="nav navbar-nav navbar-fixed-top">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a id="menured" class="menu" href="index.php?page=accueil">A propos</a></li>
+				<li><a id="menublue" class="menu" href="index.php?page=cours">Cours</a></li>
+				<li><a id="menuyellow" class="menu" href="index.php?page=contact">Contact</a></li>
+			</ul>
 		</div>
-		<section id="about" class="container">
-			<article>
-				<div class="row">
-					<h1>Qui suis-je ?</h1>
+	</nav>
+	<div id="accueil">
+		<div id="cover">
+			<h1 class="text-center">aadc</h1>
+			<h2 class="text-center">Cours de couture</h2>
+		</div>
+	</div>
+	<section id="about" class="container">
+		<article>
+			<div class="row">
+				<h1>&Agrave; propos</h1>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="text-center"> . Patricia Balingon .</h2>
+					<p class="text-center"><span>Plus de 30 ans de carrière dans la couture et la création</span><br/> (Usine, magasin de déguisement, auto-entreprenariat) .</p>
 				</div>
-				<div class="row vertical-center">
-					<p class="col-md-4 align-middle">Je m'appelle Patricia Balingon, j'ai longtemps travaillé pour une enseigne de déquisement ou j'ai eu la chance de travaillé sur divers évènements prestigieux (Carnaval de venise, Miss nord pas de calais, Miss France et Miss Univers), aujourd'hui je travail à mon compte dans la création et la retouche.</p>
-					<img src="image/patriciabalingon.jpg" class="col-md-2 col-md-offset-1 circle">
-					<p class="col-md-4 col-md-offset-1 align-middle">Cette société vous propose des cours de couture, pour tout niveaux, tout âge, en groupe ou en solo, j'essai de m'adapter au mieux à votre agenda en vous proposant des horaires très variable</p>
+				<div class="col-xs-12 text-center">
+					<img src="image/patriciabalingon.jpg" class="circle center-block">
 				</div>
-			</article>
-		</section>
-		<section id="contact" class="container">
-			<h1>Me contacter</h1>
-			<form class="row" action="index.php?page=contact" method="post" id="formcontact">
-				<div class="col-lg-4">
-					<div class="form-group">
-						<label for="nom">Nom :</label>
-						<input type="text" id="nom" class="form-control" name="nom" />
-					</div>
-					<div class="form-group">
-						<label for="courriel">Courriel :</label>
-						<input type="email" id="courriel" class="form-control" name="courriel" />
-					</div>
-				</div>
-				<div class="col-lg-8 form-group">
-					<label for="message">Message :</label>
-					<textarea id="message" class="form-control" name="message"></textarea>
-				</div> 
-				<div class="button">
-					<button type="submit" name="btEnvoyer" id="btEnvoyer">Envoyer votre message</button>
+				<div class="col-xs-12">
+					<p class="text-center">Je vous propose des cours de couture,<br/> pour tout niveaux,<br/> tout âge,<br/> en groupe ou en individuel.</p>
 				</div>
 			</div>
-			</form>
-			<div id="contact">
-				<p>A l'atelier de couture</p>
-				<p>22 rue Lalo</p>
-				<p>62750 Loos-en-Gohelle</p>
-				<p>Télephone: </p> 
+		</article>
+	</section>
+	<section id="contact" class="container">
+		<h1>Me contacter</h1>
+		<form class="row" action="index.php?page=contact" method="post" id="formcontact">
+			<div class="col-lg-4">
+				<div class="form-group">
+					<label for="nom">Nom :</label>
+					<input type="text" id="nom" class="form-control" name="nom" />
+				</div>
+				<div class="form-group">
+					<label for="courriel">Courriel :</label>
+					<input type="email" id="courriel" class="form-control" name="courriel" />
+				</div>
 			</div>
-		</section><!-- section contact -->
-		<footer>
-			<div id='copyright'><p>Copyright © 2017 aadc cour de couture . Tous droits reservés .</p></div>
-		</footer>
-		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-		<script type="text/javascript" src="js/ed-lea-jquery-collagePlus-2085c67/jquery.collagePlus.min.js"></script>
-		<script type="text/javascript" src="js/codejs.js"></script>
-	</body>
+			<div class="col-lg-8 form-group">
+				<label for="message">Message :</label>
+				<textarea id="message" class="form-control" name="message"></textarea>
+			</div>
+			<div class="button">
+				<button type="submit" name="btEnvoyer" id="btEnvoyer">Envoyer votre message</button>
+			</div>
+			</div>
+		</form>
+		<div id="contact">
+			<p>A l'atelier de couture</p>
+			<p>22 rue Lalo</p>
+			<p>62750 Loos-en-Gohelle</p>
+			<p>Télephone: </p>
+		</div>
+	</section>
+	<!-- section contact -->
+	<footer>
+		<div id='copyright'>
+			<p>Copyright © 2017 aadc cour de couture . Tous droits reservés .</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/ed-lea-jquery-collagePlus-2085c67/jquery.collagePlus.min.js"></script>
+	<script type="text/javascript" src="js/codejs.js"></script>
+</body>
+
 </html>

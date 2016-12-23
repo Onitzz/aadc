@@ -15,7 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "jquery-parallaxer": "^0.1.2"
+    "bootstrap": "^3.3.7"
   }
 }

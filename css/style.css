@@ -1,7 +1,6 @@
 body, html {
-  height: 100%;
   font-family: 'Caudex', serif;
-  background: #fff url(../image/grey_wash_wall.png) repeat; }
+  background: #fff; }
 
 .nav, .navbar {
   height: 50px;
@@ -13,7 +12,7 @@ body, html {
   transition: 0.1s; }
 
 .nav a {
-  color: #777;
+  color: #222;
   font-size: 20px;
   font-weight: normal;
   font-family: 'Oswald', sans-serif; }
@@ -22,31 +21,34 @@ body, html {
   color: #ff0040;
   background-color: transparent; }
 
-#accueil {
-  width: 100%;
-  max-height: 100%;
-  min-height: 50vw;
-  height: 65vw; }
+/*#parallax1 {
+	width: 100%;
+	max-height: 100%;
+	min-height: 50vw;
+	height: 65vw;
+}*/
+.parallaxParent {
+  height: 65vw;
+  overflow: hidden;
+  max-height: 100%; }
+  .parallaxParent > * {
+    height: 200%;
+    position: relative;
+    top: -100%; }
+  .parallaxParent > div {
+    background: url(../image/ciseau.jpg) center;
+    background-size: 150%; }
 
-.section {
-  background: url(../image/ciseau.jpg) no-repeat #000;
-  background-size: 100%; }
-
-.section .inner {
-  background: url(../image/ciseau.jpg) no-repeat;
-  background-size: 100%; }
-
-#cover {
-  background-color: rgba(255, 255, 255, 0);
-  height: 100%;
-  padding-top: 5%;
-  padding-bottom: 10%; }
-  #cover h1 {
+.cover {
+  position: absolute;
+  top: 10%;
+  left: 30%; }
+  .cover h1 {
     font-size: 22vw;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     color: white; }
-  #cover h2 {
+  .cover h2 {
     margin: 0;
     color: #ff0040;
     font-weight: bold;
@@ -61,6 +63,10 @@ section p {
   font-size: small;
   color: #222; }
 
+#about {
+  background: url(../image/atelier.jpg) top center fixed no-repeat;
+  background-size: 100%; }
+
 .troisieme-quard {
   background-color: rgba(0, 0, 0, 0.5); }
   .troisieme-quard h1 {
@@ -70,33 +76,88 @@ section p {
     font-size: 4rem;
     color: #fff; }
 
-.second-quard {
+.conteneurabout {
   background-color: #333;
-  padding-bottom: 70px; }
-  .second-quard h2 {
+  padding-bottom: 70px;
+  margin-top: 200px;
+  margin-bottom: 200px; }
+  .conteneurabout h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 3.3rem;
     font-weight: bolder;
     color: #ff0040; }
-  .second-quard img.circle {
+  .conteneurabout img.circle {
     border: 2px solid #aaa;
     border-radius: 50%;
     width: 100%;
     max-width: 200px; }
-  .second-quard p {
+  .conteneurabout p {
     font-family: 'Oswald', sans-serif;
     font-size: 1.3rem;
     color: #777; }
-  .second-quard span {
+  .conteneurabout span {
     font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     color: rgba(200, 46, 84, 0.71); }
-  .second-quard div {
+  .conteneurabout div {
     margin-bottom: 60px; }
 
-#about {
-  background: url(../image/atelier.jpg) fixed;
-  background-size: 100%; }
+#cours {
+  background: url(../image/atelier2.jpg) top center fixed no-repeat;
+  background-size: 120%;
+  padding-bottom: 200px; }
+  #cours div {
+    margin-top: 0;
+    margin-bottom: 0; }
+  #cours .conteneurcours {
+    background-color: #fff;
+    padding-bottom: 70px;
+    margin-top: 50px; }
+
+.conteneurcours #textcours {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+.conteneurcours h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.3rem;
+  font-weight: bolder;
+  color: #ff0040; }
+.conteneurcours img.circle {
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  width: 100%;
+  max-width: 200px; }
+.conteneurcours p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  color: #222; }
+.conteneurcours span {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(200, 46, 84, 0.71); }
+.conteneurcours div {
+  margin-bottom: 60px; }
+.conteneurcours .mosaicflow__column {
+  float: left; }
+.conteneurcours .mosaicflow__item {
+  margin: 0; }
+  .conteneurcours .mosaicflow__item img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+#contact {
+  padding-bottom: 200px; }
+  #contact > div {
+    margin-bottom: 200px; }
+  #contact .input {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    #contact .input input {
+      height: 70px; }
+  #contact textarea {
+    height: 300px; }
 
 /*# sourceMappingURL=style.css.map */

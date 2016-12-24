@@ -9,23 +9,32 @@
 	<link href="https://fonts.googleapis.com/css?family=Caudex|Dancing+Script|Pacifico" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+	<script type="text/javascript" src="bower_components/jquery.mosaicflow/jquery.mosaicflow.min.js"></script>
+	<script type="text/javascript" src="bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script type="text/javascript" src="bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+	<!--<script type="text/javascript" src="bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>-->
+	<script type="text/javascript" src="js/codejs.js"></script>
 </head>
 
 <body>
 	<nav class="nav navbar-nav navbar-fixed-top">
 		<div class="container-fluid">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a id="menured" class="menu" href="index.php?page=accueil">A propos</a></li>
-				<li><a id="menublue" class="menu" href="index.php?page=cours">Cours</a></li>
-				<li><a id="menuyellow" class="menu" href="index.php?page=contact">Contact</a></li>
+				<li><a id="menured" class="menu" href="index.html#about">A propos</a></li>
+				<li><a id="menublue" class="menu" href="index.html#cours">Cours</a></li>
+				<li><a id="menuyellow" class="menu" href="index.html#contact">Contact</a></li>
 			</ul>
 		</div>
 	</nav>
-	<div id="accueil" class="section">
-		<div id="cover" class="inner">
-			<h1 class="text-center">aadc</h1>
-			<h2 class="text-center">Cours de couture</h2>
+	<div id="parallax1" class="parallaxParent">
+		<div>
 		</div>
+	</div>
+	<div class="cover">
+		<h1 class="text-center">aadc</h1>
+		<h2 class="text-center">Cours de couture</h2>
 	</div>
 	<section id="about" class="container-fluid">
 		<article class="row">
@@ -34,8 +43,8 @@
 					<h1 class="text-center">&Agrave; PROPOS</h1>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-4 col-sm-pull-3 second-quard">
-				
+			<div class="col-xs-12 col-sm-4 col-sm-pull-3 conteneurabout">
+
 				<div>
 					<div>
 						<h2 class="text-center"> . Patricia Balingon .</h2>
@@ -51,44 +60,121 @@
 			</div>
 		</article>
 	</section>
-	<section id="contact" class="container">
-		<h1>Me contacter</h1>
+	<section id="cours" class="container-fluid">
+		<header class="row">
+			<div class="col-xs-12 col-sm-2 col-sm-offset-1  troisieme-quard">
+				<div>
+					<h1 class="text-center">LES COURS</h1>
+				</div>
+			</div>
+		</header>
+		<article class="row">
+			<div class="col-xs-12 col-sm-7 col-sm-offset-3 conteneurcours">
+				<div class="container-fluid">
+					<div id="textcours" class="row text-center">
+						<div class="col-sm-8 col-sm-offset-2">
+							<p>Les cours de couture que je propose sont fait pour vous aidez à avancer, à évoluer dans la couture. Plus rien ne vous semblera insurmontable, les patrons autoroute , savoir lire les indications etc..</p>
+							<p>Que ce soit pour un simple objet comme une trousse , un sac ,une robe ou un manteau, dans l'embellissement de votre maison ou simplement faire de beaux vêtements pour vos enfants ou l'arrivée de votre bébé.</p>
+							<p>Je vous propose des cours évolutifs qui s'adaptent à votre niveau et à votre vitesse d'apprentissage, c'est votre moment de détente</p>
+						</div>
+					</div>
+					<div class="row">
+						<div id="imagecours" class="col-xs-12">
+							<div class="clearfix mosaicflow" data-item-height-calculation="attribute">
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(2).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(3).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(4).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(8).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(9).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(10).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(11).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(12).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(13).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(14).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(15).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(18).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(19).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(21).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(22).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(23).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							 <div class="mosaicflow__item">
+								<img width="500" height="300" src="image/imgcours/imagecours(24).jpg" alt="Image de cours de couture à Loos en Gohelle, Lens">
+							 </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<section id="contact" class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2 col-sm-offset-5 troisieme-quard">
+				<h1 class="text-center">CONTACT</h1>
+			</div>
+		</div>
 		<form class="row" action="index.php?page=contact" method="post" id="formcontact">
-			<div class="col-lg-4">
-				<div class="form-group">
-					<label for="nom">Nom :</label>
-					<input type="text" id="nom" class="form-control" name="nom" />
+			<div class="col-sm-3 col-sm-offset-1">
+				<div class="form-group input">
+					<input type="text" id="nom" class="form-control" name="nom" placeholder="Votre nom"/>
 				</div>
-				<div class="form-group">
-					<label for="courriel">Courriel :</label>
-					<input type="email" id="courriel" class="form-control" name="courriel" />
+				<div class="form-group input">
+					<input type="email" id="courriel" class="form-control" name="courriel" placeholder="Votre Email" />
 				</div>
 			</div>
-			<div class="col-lg-8 form-group">
-				<label for="message">Message :</label>
-				<textarea id="message" class="form-control" name="message"></textarea>
+			<div class="col-sm-4 form-group">
+				<textarea id="message" class="form-control" name="message">Votre message</textarea>
 			</div>
-			<div class="button">
-				<button type="submit" name="btEnvoyer" id="btEnvoyer">Envoyer votre message</button>
+			<div id="contact" class="col-sm-3">
+				<p>A l'atelier de couture</p>
+				<p>22 rue Lalo</p>
+				<p>62750 Loos-en-Gohelle</p>
+				<p>Télephone: </p>
 			</div>
+			<div class="button form-group">
+				<button class="form-control" type="submit" name="btEnvoyer" id="btEnvoyer">Envoyer votre message</button>
 			</div>
 		</form>
-		<div id="contact">
-			<p>A l'atelier de couture</p>
-			<p>22 rue Lalo</p>
-			<p>62750 Loos-en-Gohelle</p>
-			<p>Télephone: </p>
-		</div>
 	</section>
 	<!-- section contact -->
 	<footer>
 		<div id='copyright'>
-			<p>Copyright © 2017 aadc cour de couture . Tous droits reservés .</p>
+			<p class="text-center">Copyright © 2017 aadc cour de couture . Tous droits reservés .</p>
 		</div>
 	</footer>
-	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="bower_components/jquery-parallaxer/jquery-parallaxer.js"></script>
-	<script type="text/javascript" src="js/codejs.js"></script>
+
 </body>
 
 </html>

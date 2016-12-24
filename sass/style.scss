@@ -1,7 +1,6 @@
 body, html {
-	height: 100%;
 	font-family: 'Caudex', serif;
-	background: #fff url(../image/grey_wash_wall.png) repeat;
+	background: #fff;
 }
 
 .nav, .navbar {
@@ -17,7 +16,7 @@ body, html {
 
 .nav {
 	a {
-		color: #777;
+		color: #222;
 		font-size: 20px;
 		font-weight: normal;
 		font-family: 'Oswald', sans-serif;
@@ -32,26 +31,34 @@ body, html {
 	}
 }
 
-#accueil {
+/*#parallax1 {
 	width: 100%;
 	max-height: 100%;
 	min-height: 50vw;
 	height: 65vw;
+}*/
+
+.parallaxParent {
+	height: 65vw;
+	overflow: hidden;
+	max-height: 100%;
+
+	&> * {
+		height: 200%;
+		position: relative;
+		top: -100%;
+	}
+
+	& > div {
+		background: url(../image/ciseau.jpg) center;
+		background-size: 150%;
+	}
 }
-.section {
-	background: url(../image/ciseau.jpg) no-repeat #000;
-	background-size:100%; }
-	
-	.section .inner {
-		background: url(../image/ciseau.jpg) no-repeat;
-		background-size:100%; }
 
-#cover {
-	background-color: rgba(255, 255, 255, 0);
-	height: 100%;
-	padding-top: 5%;
-	padding-bottom: 10%;
-
+.cover{
+	position:absolute;
+	top:10%;
+	left:30%;
 	h1{
 		font-size: 22vw;
 		font-family: 'Oswald', sans-serif;
@@ -68,6 +75,7 @@ body, html {
 	}
 }
 
+
 section {
 	h1 {
 		font-size: 4rem;
@@ -81,6 +89,11 @@ section {
 	}
 }
 
+#about {
+	background:url(../image/atelier.jpg) top center fixed no-repeat;
+	background-size:100%;
+}
+
 .troisieme-quard {
 	background-color:rgba(0,0,0,0.5);
 	h1 {
@@ -92,9 +105,11 @@ section {
 	}
 }
 
-.second-quard{
+.conteneurabout{
 	background-color: #333;
 	padding-bottom: 70px;
+	margin-top: 200px;
+	margin-bottom: 200px;
 
 	h2{
 		font-family: 'Dancing Script', cursive;
@@ -128,7 +143,85 @@ section {
 	}
 }
 
-#about {
-	background:url(../image/atelier.jpg) fixed;
-	background-size:100%;
+#cours{
+	background:url(../image/atelier2.jpg) top center fixed no-repeat;
+	background-size:120%;
+	padding-bottom: 200px;
+	div{
+		margin-top:0;
+		margin-bottom: 0;
+	}
+	.conteneurcours{
+		background-color: #fff;
+		padding-bottom: 70px;
+		margin-top: 50px;
+	}
+}
+
+.conteneurcours{
+	#textcours{
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+
+	h2{
+		font-family: 'Dancing Script', cursive;
+		font-size: 3.3rem;
+		font-weight: bolder;
+		color: #ff0040;
+	}
+
+	img.circle {
+		border:2px solid #aaa;
+		border-radius: 50%;
+		width: 100%;
+		max-width: 200px;
+	}
+
+	p {
+		font-family: 'Oswald', sans-serif;
+		font-size: 1.5rem;
+		color: #222;
+	}
+
+	span{
+		font-family: 'Oswald', sans-serif;
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: rgba(#c82e54, 0.71);
+	}
+
+	div{
+		margin-bottom: 60px;
+	}
+	.mosaicflow__column {
+		float:left;
+	}
+	.mosaicflow__item {
+		margin: 0;
+		img {
+			display:block;
+			width:100%;
+			height:auto;
+		}
+	}
+}
+
+#contact{
+	padding-bottom: 200px;
+	& > div{
+		margin-bottom: 200px;
+	}
+
+	.input{
+		margin-top: 50px;
+		margin-bottom: 50px;
+		input{
+			height:70px;
+		}
+	}
+
+	textarea{
+		height:300px;
+	}
 }
